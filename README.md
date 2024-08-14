@@ -14,3 +14,10 @@ This project/algorithm focuses on developing a sentiment analysis system for soc
 - Naive Bayes Multi classifier is chosen as the classification algorithm for its in-depth segregation capabilities.
 - After training the model a similar vectorization is performed to test the data set and fed to the model for prediction.
 - Here Accuracy and Confusion matrix from Scikit Learn are used as Evaluation Metrics for the Model.
+
+# Conclusion
+- Looking at the Evaluation Metrics and also the model evaluation on new tweets it's clear that the model is able to predict the positive sentimental texts accurately
+- But the model suffers From neutral and negative segregation.
+- If we look at the number of samples for Negative posts,it's less than both the positive and neutral posts leading to an imbalanced dataset. The number is nearly half of the    neutral postings. This might led to confusion while allocating the type of sentiment to the post.
+- This can be handled by balancing the dataset i.e. nearly equal number of samples for each sentiment type.
+- Better results can be achieved by acquiring more data samples or atleast a little to balance the dataset.
